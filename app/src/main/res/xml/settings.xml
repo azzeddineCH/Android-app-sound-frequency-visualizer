@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:title="Edit High waves">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="HIGH_WAVE_STATE"
+            android:title="Show"/>
+        <ListPreference
+            android:dialogTitle="Choose waves color"
+            android:entries="@array/colors_string"
+            android:entryValues="@array/colors_code"
+            android:defaultValue="Red"
+            android:key="HIGH_WAVE_COLORS"
+            android:title="High waves color"/>
+
+        </PreferenceScreen>
+    <PreferenceScreen
+            android:title="Edit Medium waves">
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="MEDIUM_WAVE_STATE"
+                android:title="Show"/>
+            <ListPreference
+                android:dialogTitle="Choose waves color"
+                android:entries="@array/colors_string"
+                android:entryValues="@array/colors_code"
+                android:defaultValue="Blue"
+                android:key="MEDIUM_WAVE_COLORS"
+                android:title="Medium waves color"/>
+        </PreferenceScreen>
+    <PreferenceScreen
+                android:title="Edit Low waves">
+                <SwitchPreference
+                    android:defaultValue="true"
+                    android:key="LOW_WAVE_STATE"
+                    android:title="Show"/>
+                <ListPreference
+                    android:dialogTitle="Choose waves color"
+                    android:entries="@array/colors_string"
+                    android:entryValues="@array/colors_code"
+                    android:defaultValue="Green"
+                    android:key="LOW_WAVE_COLORS"
+                    android:title="Low waves color"/>
+            </PreferenceScreen>
+    <ListPreference
+            android:dialogTitle="Choose Input"
+            android:entries="@array/input_types"
+            android:entryValues="@array/input_types_key"
+            android:defaultValue="0"
+            android:key="INPUT_TYPE"
+            android:title="Edit Sound Input type"/>
+
+</PreferenceScreen>

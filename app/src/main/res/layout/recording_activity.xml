@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.votek.android.audiovisualizer.RecordingActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/highWavesContainer"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/highFreq"
+                style="@style/frequencyTitle"/>
+            <com.votek.android.audiovisualizer.SiriWaveView
+                android:id="@+id/highWaves"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:waveAmount="1"
+                app:waveColor="@android:color/holo_red_dark"
+                app:waveFrequency="0.0"
+                app:waveHeight="50dp"
+                app:waveInitialPhaseOffset="0"
+                app:wavePhaseShift="-0.05"
+                app:waveVerticalPosition="2"
+                android:background="@color/whitesmoke"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/medWavesContainer"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medFreq"
+                style="@style/frequencyTitle"/>
+            <com.votek.android.audiovisualizer.SiriWaveView
+                android:id="@+id/mediumWaves"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:waveAmount="1"
+                app:waveColor="@android:color/holo_orange_dark"
+                app:waveFrequency="0.0"
+                app:waveHeight="50dp"
+                app:waveInitialPhaseOffset="0"
+                app:wavePhaseShift="-0.05"
+                app:waveVerticalPosition="2"
+                android:background="@color/whitesmoke"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lowWavesContainer"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lowFreq"
+                style="@style/frequencyTitle"/>
+            <com.votek.android.audiovisualizer.SiriWaveView
+                android:id="@+id/lowWaves"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:waveAmount="1"
+                app:waveColor="@android:color/holo_green_dark"
+                app:waveFrequency="0.0"
+                app:waveHeight="50dp"
+                app:waveInitialPhaseOffset="0"
+                app:wavePhaseShift="-0.05"
+                app:waveVerticalPosition="2"
+                android:background="@color/whitesmoke"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/startButton"
+            android:onClick="controlButtonClicked"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</ScrollView>
+
+

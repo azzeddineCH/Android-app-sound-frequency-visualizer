@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AudioVisualizer</string>
+
+
+    <string name="highFreq">90% of sound frequency</string>
+    <string name="medFreq">30% of sound frequency</string>
+    <string name="lowFreq">10% of sound frequency</string>
+
+    <string name="settings">Settings</string>
+    <string name="play_audio">Play</string>
+    <string name="pause_audio">Pause</string>
+
+    <string name="play_file">Play file</string>
+    <string name="pause_file">Pause file</string>
+    <string-array name="colors_string">
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Green</item>
+        <item>Black</item>
+    </string-array>
+    <string-array name="colors_code">
+        <item>#FF0000</item>
+        <item>#FFA500</item>
+        <item>#00FF00</item>
+        <item>#000000</item>
+
+    </string-array>
+
+    <string-array name="input_types">
+        <item>Audio file</item>
+        <item>Speech</item>
+    </string-array>
+
+    <string-array name="input_types_key">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+</resources>
